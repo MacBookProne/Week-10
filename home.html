@@ -92,7 +92,7 @@
     <script>
         // Script to handle adding projects to the table
         const titleInput = document.getElementById("project-title-input");
-        const genreInput = document.querySelector("#project-category-input");
+        const categoryInput = document.querySelector("#project-category-input");
         const skillsInput = document.querySelector("#project-skills-input");
         const completedInput = document.querySelector("#project-completed-input");
         const projectTableBody = document.getElementById("project-table-body");
@@ -103,7 +103,7 @@
             const newTr = document.createElement("tr");
             newTr.innerHTML = `
                 <td>${titleInput.value}</td>
-                <td>${genreInput.value}</td>
+                <td>${categoryInput.value}</td>
                 <td>${skillsInput.value}</td>
                 <td>${completedInput.value}</td>
                 <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
@@ -117,7 +117,7 @@
 
             // Clear input fields after adding a project
             titleInput.value = "";
-            genreInput.value = "";
+            categoryInput.value = "";
             skillsInput.value = "";
             completedInput.value = "";
         }
